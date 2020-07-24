@@ -1,0 +1,15 @@
+<h1>posts (<%= @posts.size %>)</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post_path(post) %> | <%= post.created_at%>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <p>
+  <%= link_to 'Create', new_post_path %>
+  </p>
+</div>
