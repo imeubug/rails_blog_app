@@ -1,15 +1,32 @@
-<h1>posts (<%= @posts.size %>)</h1>
+<div id="main">
+  <header>
+    header
+  </header>
 
-<ul>
-  <% @posts.each do |post| %>
-    <li>
-      <%= link_to post.title, post_path(post) %> | <%= post.created_at%>
-    </li>
-  <% end %>
-</ul>
+  <div class="divider"></div>
 
-<div>
-  <p>
-  <%= link_to 'Create', new_post_path %>
-  </p>
+  <body>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <span class="post-title">
+            <%= link_to post.title, post_path(post) %>
+          </span>
+          <span class="post-date">
+            <span class="p-d-year"> <%= post.created_at.year%> </span>
+            <span class="p-d-month"> <%= post.created_at.strftime("%b")%> </span>
+            <span class="p-d-day"> <%= post.created_at.day%> </span>
+          </span>
+        </li>
+      <% end %>
+    </ul>
+
+  <div class="divider"></div>
+
+    <div>
+      <p>
+      <%= link_to 'Create', new_post_path %>
+      </p>
+    </div>
+  </body>
 </div>
