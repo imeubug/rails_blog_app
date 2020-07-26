@@ -58,7 +58,7 @@ a {
   color: black;
 }
 
-#main a:hover {
+a:hover {
   color: #369;
   border-color: #369;
 }
@@ -93,6 +93,10 @@ a {
 #show-page .p-body {
   width: 500px;
   margin: 0 auto;
+}
+
+#show-page footer {
+  text-align: center;
 }
 
 .divider {

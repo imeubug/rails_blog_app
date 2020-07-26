@@ -15,23 +15,25 @@
   </div>
 
   <div class="divider"></div>
-  
+
   <div class="p-body">
     <p>
-      <%= simple_format @post.body %> 
+    <%= simple_format @post.body %> 
     </p>
   </div>
 
   <div class="divider"></div>
 
-  <div>
-    <p>
-    <%= link_to "Edit", edit_post_path(@post) %> 
-    <%= link_to "Delete", post_path(@post), data: {confirm: 'delete the post?'}, method: :delete %>
-    </p>
-  </div>
+  <footer>
+    <div>
+      <p>
+      <%= link_to "Edit", edit_post_path(@post) %> 
+      <%= link_to "Delete", post_path(@post), data: {confirm: 'delete the post?'}, method: :delete %>
+      </p>
+    </div>
 
-  <div>
-    <%= link_to "Go back", posts_path %>
-  </div>
+    <div>
+      <%= link_to "Go back", posts_path %>
+    </div>
+  </footer>
 </div>
