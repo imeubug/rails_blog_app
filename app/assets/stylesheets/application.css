@@ -105,4 +105,7 @@ a:hover {
   margin: 2em auto;
 }
 
-
+.comment-body{
+  width: 500px;
+  margin: 0 auto;
+}
