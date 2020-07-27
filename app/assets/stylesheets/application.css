@@ -109,3 +109,16 @@ a:hover {
   width: 500px;
   margin: 0 auto;
 }
+
+.posted-date {
+  color: #9a9a9a;
+  font-size: 10px;
+}
+
+.each-comment {
+  margin-bottom: 25px;
+}
+
+.each-comment h4 {
+  margin: -5px 0;
+}
