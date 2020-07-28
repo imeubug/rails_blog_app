@@ -1,5 +1,7 @@
 <div class="each-comment">
-  <h4>by <%= comment.author_name %></h4>
+  <h4>
+  <span class="delete-comment"><%= link_to 'x', post_comment_path(comment), data: {confirm: "Delete the comment?"}, method: :delete %></span>
+  by <%= comment.author_name %></h4>
   <pre class="comment"><%= comment.body %></pre>
   <pre class="posted-date">Posted <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago</pre>
 </div>

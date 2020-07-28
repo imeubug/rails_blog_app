@@ -122,3 +122,21 @@ a:hover {
 .each-comment h4 {
   margin: -5px 0;
 }
+
+.post-comment {
+  width: 500px;
+  margin: 0 auto;
+}
+
+span.delete-comment {
+  background-color: #000;
+  border-radius: 10px;
+}
+span.delete-comment a {
+  color: #d3d3d3;
+  padding: 2px 4px;
+}
+
+span.delete-comment a:hover {
+  color: #757575;
+}
