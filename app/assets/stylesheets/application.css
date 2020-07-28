@@ -43,7 +43,6 @@ header {
 }
 
 #main .post-title {
-   
 }
 
 #main .post-date {
@@ -75,7 +74,7 @@ a:hover {
   font-weight: bold;
 
   margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #show-page .p-date {
@@ -140,3 +139,20 @@ span.delete-comment a {
 span.delete-comment a:hover {
   color: #757575;
 }
+
+#tag-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 1.5rem;
+}
+
+#tag-wrapper .tag {
+  background-color: #e2e2e2;
+  margin-right: 2px;
+  border-radius: 10px;
+  padding: 0 8px;
+  text-align: center;
+}
+
