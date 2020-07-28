@@ -1,13 +1,16 @@
 <div id="show-page">
-  <header>
-    <%= link_to 'header', posts_path %>
-  </header>
-
-  <div class="divider"></div>
-
   <div class="p-title">
     <%= @post.title %>
   </div>
+
+  <div id="tag-wrapper">
+    <% @post.tags.each do |tag| %>
+      <span class="tag">
+        <%= link_to tag.name, tag_path(tag) %>
+      </span>
+    <% end %>
+  </div>
+
   <div class="p-date">
     <span class="p-d-month"> <%= @post.created_at.strftime("%B")%> </span>
     <span class="p-d-day"> <%= @post.created_at.day%> </span>, 
