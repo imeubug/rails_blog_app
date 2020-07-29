@@ -1,24 +1,12 @@
-# README
+## Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm following this tutorial from [JumpStartLab](http://tutorials.jumpstartlab.com/projects/blogger.html) to create a blog to practice Rails.
 
-Things you may want to cover:
+[View on the web](https://damp-garden-57247.herokuapp.com/posts)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Tasks
+- [x] I1: Form-based Workflow
+- [x] I2: Adding Comments
+- [x] I3: Tagging
+- [ ] I4: A Few Gems
+- [ ] I5: Authentication
